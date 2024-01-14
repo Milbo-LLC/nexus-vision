@@ -16,7 +16,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.noahmilberger.mobile"
+      "bundleIdentifier": "com.noahmilberger.mobile",
+      "infoPlist": {
+        "NSBluetoothPeripheralUsageDescription": "This app needs access to Bluetooth for setting up Wifi Credentials on your Camera."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -31,6 +34,9 @@
       "eas": {
         "projectId": "b25bd7ef-a410-4c1a-8e0e-7b9ddeac5a59"
       }
-    }
+    },
+    "plugins": [
+      "react-native-ble-plx"
+    ]
   }
 }
